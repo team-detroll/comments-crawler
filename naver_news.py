@@ -37,9 +37,10 @@ def extract(url, debug=False):
         for content in contents:
             print(content.text)
 
+    driver.close()
     return contents
 
 
 if __name__ == "__main__":
-    url = 'https://news.naver.com/main/read.nhn?m_view=1&includeAllCount=true&mode=LSD&mid=shm&sid1=102&oid=022&aid=0003479487'
+    url = 'https://news.naver.com/main/read.nhn?m_view=1&includeAllCount=true&mode=LSD&mid=shm&sid1=100&oid=011&aid=0003760926'
     extract(url, debug=True)
